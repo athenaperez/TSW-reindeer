@@ -1,0 +1,232 @@
+body {
+	background-color: tomato;
+	text-align: center;
+	font-family: Comic Sans MS;
+}
+
+.listReindeer {
+	margin: .3%;
+	font-size: 1.2em;
+	text-shadow: 1px 1px 1px lightgrey;
+}
+
+#coloredReindeer {
+	margin-top: 3%;
+}
+
+h1 {
+	color: red;
+	text-shadow: 1px 1px 1px black;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+p {
+  font-family: Comic Sans, Comic Sans MS, MarkerFelt-Thin, sans;
+  font-size: 2em;
+  position: absolute;
+  z-index: 10;
+  text-shadow: 1px 1px #333;
+}
+p.green {
+  color: green;
+  top: 30px;
+  left: 0;
+}
+p.blue {
+  color: blue;
+  top: 180px;
+  left: 0;
+}
+p.yellow {
+  color: yellow;
+  top: 200px;
+  right: 0;
+}
+p.purple {
+  color: purple;
+  top: 20px;
+  right: 0;
+}
+
+.shiba {
+  margin: 50px auto;
+  width: 480px;
+  position: relative;
+}
+
+.shiba-head {
+  position: relative;
+  width: 330px;
+  height: 250px;
+  border-color: blue;
+  animation: float 1s ease-in-out alternate infinite;
+}
+
+.shiba-head-face {
+  top: 45px;
+  left: 130px;
+  position: absolute;
+  background-image: linear-gradient(180deg, #d0a149 40%, #d7cba5 80%);
+  border-radius: 50% 45%;
+  z-index: 1;
+  width: 190px;
+  height: 200px;
+  transform: rotate(15deg) skewX(-3deg);
+  box-shadow: 0 0 50px #d0a149;
+}
+
+.shiba-head-eyes {
+  top: 70px;
+  left: 140px;
+  position: absolute;
+  z-index: 4;
+  transform: rotate(5deg);
+}
+.shiba-head-eyes:after, .shiba-head-eyes:before {
+  content: "";
+  width: 18px;
+  height: 17px;
+  background: white;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  left: 23px;
+  top: 21px;
+  box-shadow: 0 0 10px #000;
+}
+.shiba-head-eyes:before {
+  width: 24px;
+  height: 18px;
+  left: 82px;
+  top: 30px;
+  box-shadow: 0 0 20px #000;
+}
+.shiba-head-eyes .shiba-head-eyeballs {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  z-index: 5;
+  background-image: linear-gradient(to bottom, #d0a149 40%, #d7cba5 80%);
+  box-shadow: 0 0 10px #897446;
+}
+.shiba-head-eyes .shiba-head-eyeballs:after, .shiba-head-eyes .shiba-head-eyeballs:before {
+  content: "";
+  width: 13px;
+  height: 16px;
+  background: #000;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  left: 28px;
+  top: 22px;
+  box-shadow: 0 0 2px #000;
+}
+.shiba-head-eyes .shiba-head-eyeballs:before {
+  width: 16px;
+  height: 18px;
+  left: 90px;
+  top: 30px;
+}
+
+.shiba-head-ears {
+  top: 15px;
+  left: 180px;
+  position: absolute;
+  z-index: 2;
+}
+.shiba-head-ears:after, .shiba-head-ears:before {
+  content: "";
+  width: 28px;
+  height: 70px;
+  background-image: linear-gradient(-45deg, #d0a149 40%, #d7cba5 80%);
+  display: block;
+  position: absolute;
+  border-radius: 20% 50% 10% 10%;
+  transform: rotate(5deg);
+  left: 0px;
+  top: 0px;
+}
+.shiba-head-ears:before {
+  width: 26px;
+  height: 90px;
+  left: 112px;
+  top: 10px;
+}
+.shiba-head-ears .shiba-head-ear-shadows {
+  top: 3px;
+  left: 0px;
+  position: absolute;
+  z-index: 0;
+}
+.shiba-head-ears .shiba-head-ear-shadows:after, .shiba-head-ears .shiba-head-ear-shadows:before {
+  content: "";
+  width: 28px;
+  height: 70px;
+  background-image: linear-gradient(-48deg, #d0a149 40%, #d7cba5 80%);
+  display: block;
+  position: absolute;
+  border-radius: 50% 30% 0 0;
+  transform: rotate(-15deg);
+  left: 8px;
+  top: 0px;
+}
+.shiba-head-ears .shiba-head-ear-shadows:before {
+  background-image: linear-gradient(-45deg, #d0a149 40%, #d7cba5 80%);
+  transform: rotate(38deg);
+  border-radius: 30% 50% 0 0;
+  width: 40px;
+  height: 90px;
+  left: 84px;
+  top: -1px;
+}
+
+.shiba-head-nose {
+  position: absolute;
+  top: 130px;
+  left: 148px;
+  z-index: 4;
+  width: 35px;
+  height: 30px;
+  background: black;
+  box-shadow: 0 3px 20px #3d341f;
+  border-radius: 10% 50% 50% 50%;
+  transform: rotate(-130deg) skew(-10deg);
+}
+
+.shiba-head-mouth {
+  position: absolute;
+  top: 175px;
+  left: 148px;
+  z-index: 4;
+}
+.shiba-head-mouth:after, .shiba-head-mouth:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  background: black;
+  box-shadow: 0 1px 10px #3d341f;
+  border-radius: 50% 50% 0 50%;
+  transform: rotate(15deg) skew(-10deg);
+}
+.shiba-head-mouth:before {
+  top: 2px;
+  left: 37px;
+  width: 30px;
+  height: 4px;
+  border-radius: 0 0 50% 0;
+  transform: rotate(-15deg) skew(-10deg);
+}
+
+@-webkit-keyframes float {
+  from {
+    -webkit-transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(10px);
+  }
+}
